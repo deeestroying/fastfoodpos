@@ -30,7 +30,7 @@ A full-stack point-of-sale application for quick-service restaurants, featuring 
    cd <repo-folder>
 
 2. **Backend Setup**
-
+   ```bash
    cd pos-backend
    npm install
    
@@ -41,9 +41,11 @@ A full-stack point-of-sale application for quick-service restaurants, featuring 
       Start the API:
 
 3. **Start the API**
-npx nodemon server.js
+   ```bash
+   npx nodemon server.js
 
 4. **Frontend Setup**
+   ```bash
    cd ../todo-app
    npm install 
    npm run dev
