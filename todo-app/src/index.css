@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ========== 🌙 Dark Mode Support ========== */
+:root {
+  --primary-bg: #f8f9fa;
+  --secondary-bg: #ffffff;
+  --text-color: #333;
+  --nav-bg: #343a40;
+  --nav-text: #ffffff;
+  --btn-primary: #007bff;
+  --btn-primary-hover: #0056b3;
+}
+
+.dark {
+  --primary-bg: #1a1a2e;
+  --secondary-bg: #16213e;
+  --text-color: #e0e0e0;
+  --nav-bg: #0f3460;
+  --nav-text: #ffffff;
+  --btn-primary: #00a8ff;
+  --btn-primary-hover: #007bb5;
+}
+
+/* Apply Theme Variables */
+body {
+  background-color: var(--primary-bg);
+  color: var(--text-color);
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: var(--nav-bg);
+  color: var(--nav-text);
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: var(--nav-bg);
+}
+
+/* Buttons */
+button {
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+button:hover {
+  transform: scale(1.02);
+}
+
+/* Primary Button */
+.btn-primary {
+  background-color: var(--btn-primary);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--btn-primary-hover);
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: var(--secondary-bg);
+  color: var(--text-color);
+  font-weight: bold;
+}
+
+td {
+  background-color: var(--primary-bg);
+}
+
+/* Form Inputs */
+input, select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: var(--secondary-bg);
+  color: var(--text-color);
+}
+
+/* Error Messages */
+.text-error {
+  color: red;
+  font-weight: bold;
+}
